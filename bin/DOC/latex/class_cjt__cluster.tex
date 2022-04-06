@@ -1,0 +1,380 @@
+\hypertarget{class_cjt__cluster}{}\doxysection{Referencia de la Clase Cjt\+\_\+cluster}
+\label{class_cjt__cluster}\index{Cjt\_cluster@{Cjt\_cluster}}
+
+
+Representa el conjunto arbolesco de unas especies.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt__cluster_a17a26dc8f4aa1660e6cd7ee19dd923ac}{Cjt\+\_\+cluster}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cjt__cluster_acbcde35ee90f72ca413653eed1c76c35}{$\sim$\+Cjt\+\_\+cluster}} ()
+\begin{DoxyCompactList}\small\item\em Destructora por defecto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt__cluster_a14b7b54d2a4bb7c333f5c8ac166d16eb}{paso\+\_\+wpgma}} ()
+\begin{DoxyCompactList}\small\item\em Paso W\+P\+G\+MA. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__cluster_a77b9b4ff4329c38084526b2bd6301ab1}{inicializar\+\_\+clusters}} (const \mbox{\hyperlink{class_tabla__distancias}{Tabla\+\_\+distancias}} \&a)
+\begin{DoxyCompactList}\small\item\em Inicializar clusters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt__cluster_a94748c44d5cd3dc7fcfc9dc2a2ba565e}{escribir\+\_\+cluster}} (const string \&k)
+\begin{DoxyCompactList}\small\item\em Operacion de escritura. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt__cluster_a60249d9b3a4d3eb4686b932abd1ef23b}{escribir\+\_\+arbol}} ()
+\begin{DoxyCompactList}\small\item\em Operacion de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cjt__cluster_a14338f36cd036ddeaace99b1279737b3}{algoritmo\+\_\+wpgma}} ()
+\begin{DoxyCompactList}\small\item\em Operacion de W\+P\+G\+MA. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}{imprimir\+\_\+bintree}} (const Bin\+Tree$<$ pair$<$ string, double $>$$>$ \&a)
+\begin{DoxyCompactList}\small\item\em Operacion de escritura de un arbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, Bin\+Tree$<$ pair$<$ string, double $>$ $>$ $>$ \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\+\_\+clu}}
+\begin{DoxyCompactList}\small\item\em Conjunto de los clusters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tabla__distancias}{Tabla\+\_\+distancias}} \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\+\_\+dist}}
+\begin{DoxyCompactList}\small\item\em Tabla de distancias de los clusters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa el conjunto arbolesco de unas especies. 
+
+Definición en la línea 23 del archivo Cjt\+\_\+cluster.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt__cluster_a17a26dc8f4aa1660e6cd7ee19dd923ac}\label{class_cjt__cluster_a17a26dc8f4aa1660e6cd7ee19dd923ac}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!Cjt\_cluster@{Cjt\_cluster}}
+\index{Cjt\_cluster@{Cjt\_cluster}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{Cjt\_cluster()}{Cjt\_cluster()}}
+{\footnotesize\ttfamily Cjt\+\_\+cluster\+::\+Cjt\+\_\+cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un \mbox{\hyperlink{class_cjt__cluster}{Cjt\+\_\+cluster}}. \begin{DoxyPrecond}{Precondición}
+cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de cluster vacio. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                          \{}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_ac7ff27c32c6c05165b6e49a58f23d1ca}{limpiar\_tabla}}();}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.clear();}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_acbcde35ee90f72ca413653eed1c76c35}\label{class_cjt__cluster_acbcde35ee90f72ca413653eed1c76c35}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!````~Cjt\_cluster@{$\sim$Cjt\_cluster}}
+\index{````~Cjt\_cluster@{$\sim$Cjt\_cluster}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cjt\_cluster()}{~Cjt\_cluster()}}
+{\footnotesize\ttfamily Cjt\+\_\+cluster\+::$\sim$\+Cjt\+\_\+cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora por defecto. 
+
+
+
+Definición en la línea 12 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt__cluster_a14b7b54d2a4bb7c333f5c8ac166d16eb}\label{class_cjt__cluster_a14b7b54d2a4bb7c333f5c8ac166d16eb}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!paso\_wpgma@{paso\_wpgma}}
+\index{paso\_wpgma@{paso\_wpgma}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{paso\_wpgma()}{paso\_wpgma()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+cluster\+::paso\+\_\+wpgma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Paso W\+P\+G\+MA. 
+
+Esta funcion ejecuta el algoritmo W\+P\+G\+MA el cual consiste en cojer los clusters de menor distancia entre si y crea un nuevo cluster con la distancia y el identificador de los dos clusters seleccionados. A su vez, actualiza todas las distancias entre las otras especies que tenian influencia con las seleccionadas. Si no se pudo ejecutar correctamente el algoritmo, cuando no tiene ninguna especie o cuando se ha generado completamente el arbol filogenetico, saltara un error por el canal general de salida.
+
+\begin{DoxyPrecond}{Precondición}
+cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Tras actualizar la tabla de distancias y conjunto de cluster imprime la tabla de distancias actualizada. Tambien devuelve un true, si se ha podido ejecutar correctamente, o un false en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                              \{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a59273271f3ca09ab494c6b4af8c7df09}{size}}() <= 1) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{16     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_cjt__cluster_a14338f36cd036ddeaace99b1279737b3}{algoritmo\_wpgma}}();}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a3a6a8f3eca3b4a9291167cac5badcaf1}{escribir\_tabla}}();}
+\DoxyCodeLine{19         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_a77b9b4ff4329c38084526b2bd6301ab1}\label{class_cjt__cluster_a77b9b4ff4329c38084526b2bd6301ab1}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!inicializar\_clusters@{inicializar\_clusters}}
+\index{inicializar\_clusters@{inicializar\_clusters}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{inicializar\_clusters()}{inicializar\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+cluster\+::inicializar\+\_\+clusters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_tabla__distancias}{Tabla\+\_\+distancias}} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Inicializar clusters. 
+
+Esta funcion borrar todos los datos tanto de la tabla de distancia como el conjunto de clusters del parametro impricito y crea nuevos datos con la tabla de distancias, del parametro explicito, del conjunto de especie en el estado actual. Los clusters estan divididos en especies individuales sin haber ejecutado ningun paso W\+P\+G\+MA.
+
+\begin{DoxyPrecond}{Precondición}
+cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La tabla del distancias esta sustituida con el parametro explicito y han sido añadidos los nuevos clusters. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 23 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                                                 \{}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_ac7ff27c32c6c05165b6e49a58f23d1ca}{limpiar\_tabla}}();}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}} = a;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.clear();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{//crea todos los clusters con las especies individuales.}}
+\DoxyCodeLine{30     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a59273271f3ca09ab494c6b4af8c7df09}{size}}(); ++i) \{}
+\DoxyCodeLine{31         \textcolor{keywordtype}{string} iden = \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a3df15314d1a5aebb30e1edcc66b75359}{id\_iesimo}}(i);}
+\DoxyCodeLine{32         BinTree<pair<string,double>> a(make\_pair(iden, 0.00));}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.insert(make\_pair(iden, a));}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_a94748c44d5cd3dc7fcfc9dc2a2ba565e}\label{class_cjt__cluster_a94748c44d5cd3dc7fcfc9dc2a2ba565e}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!escribir\_cluster@{escribir\_cluster}}
+\index{escribir\_cluster@{escribir\_cluster}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{escribir\_cluster()}{escribir\_cluster()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+cluster\+::escribir\+\_\+cluster (\begin{DoxyParamCaption}\item[{const string \&}]{k }\end{DoxyParamCaption})}
+
+
+
+Operacion de escritura. 
+
+Busca el cluster que tenga el parametro k como identificador e imprime todas las ramas que tenga el cluster en concreto, en caso contrario, salta un error por el canal general de salida.
+
+\begin{DoxyPrecond}{Precondición}
+cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El cluster buscado del parametro implicito es enviado por el canal general de salida. Si es encontrado devuelve un true, en caso contrario devuelve un false. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 37 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                   \{}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     map<string, BinTree<pair<string, double>>>::const\_iterator it = \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.find(k);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.end()) \mbox{\hyperlink{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}{imprimir\_bintree}}(it-\/>second);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordflow}{return} (it != \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.end());}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_a60249d9b3a4d3eb4686b932abd1ef23b}\label{class_cjt__cluster_a60249d9b3a4d3eb4686b932abd1ef23b}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!escribir\_arbol@{escribir\_arbol}}
+\index{escribir\_arbol@{escribir\_arbol}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{escribir\_arbol()}{escribir\_arbol()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+cluster\+::escribir\+\_\+arbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operacion de escritura. 
+
+Tras inicializar clusters con las especies actualizadas, esta operacion va ejecutando el algoritmo W\+P\+G\+MA hasta general el arbol filogenetico completo y luego es impreso por el canal general de salida.
+
+\begin{DoxyPrecond}{Precondición}
+cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El arbol del parametro implicito es escrito por el canal general de salida. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 46 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                  \{}
+\DoxyCodeLine{47     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a59273271f3ca09ab494c6b4af8c7df09}{size}}() != 0) \{}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{49         \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a59273271f3ca09ab494c6b4af8c7df09}{size}}() > 1) \mbox{\hyperlink{class_cjt__cluster_a14338f36cd036ddeaace99b1279737b3}{algoritmo\_wpgma}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         map<string, BinTree<pair<string, double>>>::const\_iterator it = \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.begin();}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}{imprimir\_bintree}}(it-\/>second);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{55     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{return}  \textcolor{keyword}{false};}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}\label{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!imprimir\_bintree@{imprimir\_bintree}}
+\index{imprimir\_bintree@{imprimir\_bintree}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{imprimir\_bintree()}{imprimir\_bintree()}}
+{\footnotesize\ttfamily void Cjt\+\_\+cluster\+::imprimir\+\_\+bintree (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, double $>$$>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Operacion de escritura de un arbol. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El Bin\+Tree del parametro explicito es enviado por el canal general de salida. Tiene el formato Preorden con una estructura de parentesis especifico para comprender mejor el arbol a la salida. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 58 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                          \{}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (not a.empty()) \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{if} (a.value().second != 0.00 or not a.left().empty() or not a.right().empty()) \{}
+\DoxyCodeLine{61             cout << \textcolor{stringliteral}{"[("} << a.value().first << \textcolor{stringliteral}{", "} << a.value().second << \textcolor{stringliteral}{") "};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63             \mbox{\hyperlink{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}{imprimir\_bintree}}(a.left());}
+\DoxyCodeLine{64             \mbox{\hyperlink{class_cjt__cluster_a28e5c1cc594dc007e6b5290dc7e4536f}{imprimir\_bintree}}(a.right());}
+\DoxyCodeLine{65             cout << \textcolor{charliteral}{']'};}
+\DoxyCodeLine{66         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{67             cout << \textcolor{charliteral}{'['} << a.value().first << \textcolor{charliteral}{']'};}
+\DoxyCodeLine{68         \}}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__cluster_a14338f36cd036ddeaace99b1279737b3}\label{class_cjt__cluster_a14338f36cd036ddeaace99b1279737b3}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!algoritmo\_wpgma@{algoritmo\_wpgma}}
+\index{algoritmo\_wpgma@{algoritmo\_wpgma}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{algoritmo\_wpgma()}{algoritmo\_wpgma()}}
+{\footnotesize\ttfamily void Cjt\+\_\+cluster\+::algoritmo\+\_\+wpgma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Operacion de W\+P\+G\+MA. 
+
+Esta operacion ejecuta todos lo calculos y operaciones necesarias para crear, tanto en la tabla de distancias como en el conjunto de clusters, el nuevo cluster que sale de juntar los dos clusters de menor distancia. Y luego elimina los clusters antiguos que son los hijos del nuevo.
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Junta los clusters con menor distancia del parametro implicito, actualizando la tabla, el conjunto de clusters y la lista de especies. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 73 del archivo Cjt\+\_\+cluster.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                   \{}
+\DoxyCodeLine{74     \textcolor{comment}{//Actualizar tabla}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{string} id1, id2;}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} dist\_min = \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a56fb68da543e0dc75bb4b52220796ee3}{distancia\_minima}}(id1, id2);}
+\DoxyCodeLine{78     \textcolor{keywordtype}{string} new\_cluster = id1+id2;}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a28d962b8830050b8e05cc4dd825eb70d}{anadir\_distancia}}(new\_cluster, new\_cluster, 0.00);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{comment}{//recalculando las nuevas distancias entre el nuevo cluster y los clusters}}
+\DoxyCodeLine{83     \textcolor{comment}{//antiguas}}
+\DoxyCodeLine{84     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a59273271f3ca09ab494c6b4af8c7df09}{size}}(); ++i) \{}
+\DoxyCodeLine{85         \textcolor{keywordtype}{string} iden = \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a3df15314d1a5aebb30e1edcc66b75359}{id\_iesimo}}(i);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         \textcolor{keywordflow}{if} (iden != id1 and iden != id2 and iden != new\_cluster) \{}
+\DoxyCodeLine{88             \textcolor{keywordtype}{double} dist = (\mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a6e089ffc77df4827151ea961b456aec4}{get\_distancia}}(id1, iden) + \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a6e089ffc77df4827151ea961b456aec4}{get\_distancia}}(id2, iden))/2.00;}
+\DoxyCodeLine{89             \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a28d962b8830050b8e05cc4dd825eb70d}{anadir\_distancia}}(new\_cluster, iden, dist);}
+\DoxyCodeLine{90             \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_a28d962b8830050b8e05cc4dd825eb70d}{anadir\_distancia}}(iden, new\_cluster, dist);}
+\DoxyCodeLine{91         \}}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_ad253ac73f3a5f9dc9e5a43c8af733112}{eliminar\_especie}}(id1);}
+\DoxyCodeLine{95     \mbox{\hyperlink{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}{M\_dist}}.\mbox{\hyperlink{class_tabla__distancias_ad253ac73f3a5f9dc9e5a43c8af733112}{eliminar\_especie}}(id2);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \textcolor{comment}{//Actualizar Clusters}}
+\DoxyCodeLine{98     }
+\DoxyCodeLine{99     map<string, BinTree<pair<string, double>>>::iterator left = \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.find(id1);}
+\DoxyCodeLine{100     map<string, BinTree<pair<string, double>>>::iterator right = \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.find(id2);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     BinTree<pair<string,double>> cluster = BinTree<pair<string, double>>(make\_pair(new\_cluster, dist\_min/2.00), left-\/>second, right-\/>second);}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.insert(make\_pair(new\_cluster, cluster));}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.erase(left);}
+\DoxyCodeLine{106     \mbox{\hyperlink{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}{Cjt\_clu}}.erase(right);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}\label{class_cjt__cluster_a022768c43c5393736a0290f9bd615823}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!Cjt\_clu@{Cjt\_clu}}
+\index{Cjt\_clu@{Cjt\_clu}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{Cjt\_clu}{Cjt\_clu}}
+{\footnotesize\ttfamily map$<$string, Bin\+Tree$<$pair$<$string, double$>$ $>$ $>$ Cjt\+\_\+cluster\+::\+Cjt\+\_\+clu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de los clusters. 
+
+
+
+Definición en la línea 101 del archivo Cjt\+\_\+cluster.\+hh.
+
+\mbox{\Hypertarget{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}\label{class_cjt__cluster_a6556a3891ad3b4d839b63cd2b90cf053}} 
+\index{Cjt\_cluster@{Cjt\_cluster}!M\_dist@{M\_dist}}
+\index{M\_dist@{M\_dist}!Cjt\_cluster@{Cjt\_cluster}}
+\doxysubsubsection{\texorpdfstring{M\_dist}{M\_dist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tabla__distancias}{Tabla\+\_\+distancias}} Cjt\+\_\+cluster\+::\+M\+\_\+dist\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tabla de distancias de los clusters. 
+
+
+
+Definición en la línea 104 del archivo Cjt\+\_\+cluster.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt__cluster_8hh}{Cjt\+\_\+cluster.\+hh}}\item 
+\mbox{\hyperlink{_cjt__cluster_8cc}{Cjt\+\_\+cluster.\+cc}}\end{DoxyCompactItemize}

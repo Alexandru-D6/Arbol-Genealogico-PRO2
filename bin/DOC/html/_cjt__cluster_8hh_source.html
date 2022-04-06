@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica - Arboles filogeneticos: Fichero Fuente Cjt_cluster.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica - Arboles filogeneticos
+   &#160;<span id="projectnumber">Alexandru Dumitru</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_cluster.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt__cluster_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef CJT_CLUSTER_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define CJT_CLUSTER_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__especie_8hh.html">Cjt_especie.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tabla__distancias_8hh.html">Tabla_distancias.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM    // sirve para ocultar este include al doxygen</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span>        <span class="comment">// y de esta manera que no salga en el diagrama</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span> <span class="comment">// pero el compilador sigue viendo el include</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cjt__cluster.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt__cluster.html">Cjt_cluster</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//Constructoras</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_cjt__cluster.html">Cjt_cluster</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ~<a class="code" href="class_cjt__cluster.html">Cjt_cluster</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> paso_wpgma();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> inicializar_clusters(<span class="keyword">const</span> <a class="code" href="class_tabla__distancias.html">Tabla_distancias</a>&amp; a);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//Escritura y Lectura</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> escribir_cluster(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; k);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> escribir_arbol();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_cjt__cluster.html#a022768c43c5393736a0290f9bd615823">  101</a></span>&#160;    map&lt;string, BinTree&lt;pair&lt;string, double&gt;&gt;&gt; <a class="code" href="class_cjt__cluster.html#a022768c43c5393736a0290f9bd615823">Cjt_clu</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_cjt__cluster.html#a6556a3891ad3b4d839b63cd2b90cf053">  104</a></span>&#160;    <a class="code" href="class_tabla__distancias.html">Tabla_distancias</a> <a class="code" href="class_cjt__cluster.html#a6556a3891ad3b4d839b63cd2b90cf053">M_dist</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> imprimir_bintree(<span class="keyword">const</span> BinTree&lt;pair&lt;string, double&gt;&gt;&amp; a);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> algoritmo_wpgma();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_tabla__distancias_8hh_html"><div class="ttname"><a href="_tabla__distancias_8hh.html">Tabla_distancias.hh</a></div><div class="ttdoc">Especificacion de la Tabla de distancias (Tabla_distancias).</div></div>
+<div class="ttc" id="aclass_cjt__cluster_html_a022768c43c5393736a0290f9bd615823"><div class="ttname"><a href="class_cjt__cluster.html#a022768c43c5393736a0290f9bd615823">Cjt_cluster::Cjt_clu</a></div><div class="ttdeci">map&lt; string, BinTree&lt; pair&lt; string, double &gt; &gt; &gt; Cjt_clu</div><div class="ttdoc">Conjunto de los clusters.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__cluster_8hh_source.html#l00101">Cjt_cluster.hh:101</a></div></div>
+<div class="ttc" id="a_cjt__especie_8hh_html"><div class="ttname"><a href="_cjt__especie_8hh.html">Cjt_especie.hh</a></div><div class="ttdoc">Especificacion de la clase Conjunto de Especies (Cjt_especie).</div></div>
+<div class="ttc" id="aclass_tabla__distancias_html"><div class="ttname"><a href="class_tabla__distancias.html">Tabla_distancias</a></div><div class="ttdoc">Representa una tabla cuadrada de las distancias entre distancias.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8hh_source.html#l00022">Tabla_distancias.hh:22</a></div></div>
+<div class="ttc" id="aclass_cjt__cluster_html"><div class="ttname"><a href="class_cjt__cluster.html">Cjt_cluster</a></div><div class="ttdoc">Representa el conjunto arbolesco de unas especies.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__cluster_8hh_source.html#l00023">Cjt_cluster.hh:23</a></div></div>
+<div class="ttc" id="aclass_cjt__cluster_html_a6556a3891ad3b4d839b63cd2b90cf053"><div class="ttname"><a href="class_cjt__cluster.html#a6556a3891ad3b4d839b63cd2b90cf053">Cjt_cluster::M_dist</a></div><div class="ttdeci">Tabla_distancias M_dist</div><div class="ttdoc">Tabla de distancias de los clusters.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__cluster_8hh_source.html#l00104">Cjt_cluster.hh:104</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

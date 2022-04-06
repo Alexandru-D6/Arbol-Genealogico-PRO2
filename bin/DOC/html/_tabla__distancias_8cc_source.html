@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica - Arboles filogeneticos: Fichero Fuente Tabla_distancias.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica - Arboles filogeneticos
+   &#160;<span id="projectnumber">Alexandru Dumitru</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Tabla_distancias.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_tabla__distancias_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tabla__distancias_8hh.html">Tabla_distancias.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a8ab42ed3a4bd4cf67295993858451f8e">    7</a></span>&#160;<a class="code" href="class_tabla__distancias.html#a8ab42ed3a4bd4cf67295993858451f8e">Tabla_distancias::Tabla_distancias</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.clear();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#ade160d7a6d4af1d2550218f647268103">   11</a></span>&#160;<a class="code" href="class_tabla__distancias.html#ade160d7a6d4af1d2550218f647268103">Tabla_distancias::~Tabla_distancias</a>() {}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a28d962b8830050b8e05cc4dd825eb70d">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tabla__distancias.html#a28d962b8830050b8e05cc4dd825eb70d">Tabla_distancias::anadir_distancia</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; id1, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; id2, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; dist) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.insert(make_pair(id1, map&lt;string,double&gt;()));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>[id1].insert(make_pair(id2,dist));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#ad253ac73f3a5f9dc9e5a43c8af733112">   20</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tabla__distancias.html#ad253ac73f3a5f9dc9e5a43c8af733112">Tabla_distancias::eliminar_especie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> borrado = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.erase(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    map&lt;string, map &lt;string, double&gt;&gt;::iterator itr = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.begin();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">while</span> (itr != <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.end() and borrado) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        itr-&gt;second.erase(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ++itr;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> borrado;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#ac7ff27c32c6c05165b6e49a58f23d1ca">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tabla__distancias.html#ac7ff27c32c6c05165b6e49a58f23d1ca">Tabla_distancias::limpiar_tabla</a>() {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.clear();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a6e089ffc77df4827151ea961b456aec4">   39</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_tabla__distancias.html#a6e089ffc77df4827151ea961b456aec4">Tabla_distancias::get_distancia</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; id1, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; id2)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    map&lt;string,map&lt;string,double&gt;&gt;::const_iterator itr = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.find(id1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    map&lt;string,double&gt;::const_iterator itc = itr-&gt;second.find(id2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> itc-&gt;second;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a59273271f3ca09ab494c6b4af8c7df09">   45</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_tabla__distancias.html#a59273271f3ca09ab494c6b4af8c7df09">Tabla_distancias::size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.size();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a3df15314d1a5aebb30e1edcc66b75359">   49</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_tabla__distancias.html#a3df15314d1a5aebb30e1edcc66b75359">Tabla_distancias::id_iesimo</a>(<span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    map&lt;string, map&lt;string, double&gt;&gt;::const_iterator it = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.begin();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">while</span> (i &gt; 1) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        ++it;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        --i;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> it-&gt;first;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#aeecb1b180727ab4604c4e7d189106835">   60</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tabla__distancias.html#aeecb1b180727ab4604c4e7d189106835">Tabla_distancias::existe_especie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    map&lt;string, map&lt;string,double&gt;&gt;::const_iterator it = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> it != <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.end();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a56fb68da543e0dc75bb4b52220796ee3">   66</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_tabla__distancias.html#a56fb68da543e0dc75bb4b52220796ee3">Tabla_distancias::distancia_minima</a>(<span class="keywordtype">string</span>&amp; id1, <span class="keywordtype">string</span>&amp; id2) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    map&lt;string, map &lt;string, double&gt;&gt;::iterator itr = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.begin();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    map &lt;string, double&gt;::iterator itc;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">double</span> min_dist = 101.00;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">while</span> (itr != <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.end()) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        itc = itr-&gt;second.find(itr-&gt;first);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ++itc;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> (itc != itr-&gt;second.end()) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">if</span> (itc-&gt;second &lt; min_dist) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                min_dist = itc-&gt;second;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                id1 = itr-&gt;first;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                id2 = itc-&gt;first;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            ++itc;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ++itr;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> min_dist;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//Escritura</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_tabla__distancias.html#a3a6a8f3eca3b4a9291167cac5badcaf1">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tabla__distancias.html#a3a6a8f3eca3b4a9291167cac5badcaf1">Tabla_distancias::escribir_tabla</a>() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    map&lt;string, map &lt;string, double&gt;&gt;::iterator itr = <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.begin();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    map &lt;string, double&gt;::iterator itc;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span> (itr != <a class="code" href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">M_dist</a>.end()) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        itc = itr-&gt;second.find(itr-&gt;first);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ++itc;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        cout &lt;&lt; itr-&gt;first &lt;&lt; <span class="charliteral">&#39;:&#39;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">while</span> (itc != itr-&gt;second.end()) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            cout &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; itc-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; itc-&gt;second &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            ++itc;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        ++itr;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_tabla__distancias_html_aa3ef70f2974982fff1b745bb6ab91aa3"><div class="ttname"><a href="class_tabla__distancias.html#aa3ef70f2974982fff1b745bb6ab91aa3">Tabla_distancias::M_dist</a></div><div class="ttdeci">map&lt; string, map&lt; string, double &gt; &gt; M_dist</div><div class="ttdoc">Matriz que almacena las distancias entre especies.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8hh_source.html#l00120">Tabla_distancias.hh:120</a></div></div>
+<div class="ttc" id="a_tabla__distancias_8hh_html"><div class="ttname"><a href="_tabla__distancias_8hh.html">Tabla_distancias.hh</a></div><div class="ttdoc">Especificacion de la Tabla de distancias (Tabla_distancias).</div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_ade160d7a6d4af1d2550218f647268103"><div class="ttname"><a href="class_tabla__distancias.html#ade160d7a6d4af1d2550218f647268103">Tabla_distancias::~Tabla_distancias</a></div><div class="ttdeci">~Tabla_distancias()</div><div class="ttdoc">Destructora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00011">Tabla_distancias.cc:11</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a3a6a8f3eca3b4a9291167cac5badcaf1"><div class="ttname"><a href="class_tabla__distancias.html#a3a6a8f3eca3b4a9291167cac5badcaf1">Tabla_distancias::escribir_tabla</a></div><div class="ttdeci">void escribir_tabla()</div><div class="ttdoc">Operacion de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00091">Tabla_distancias.cc:91</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_aeecb1b180727ab4604c4e7d189106835"><div class="ttname"><a href="class_tabla__distancias.html#aeecb1b180727ab4604c4e7d189106835">Tabla_distancias::existe_especie</a></div><div class="ttdeci">bool existe_especie(const string &amp;id)</div><div class="ttdoc">Consultora de existencia de especie.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00060">Tabla_distancias.cc:60</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a28d962b8830050b8e05cc4dd825eb70d"><div class="ttname"><a href="class_tabla__distancias.html#a28d962b8830050b8e05cc4dd825eb70d">Tabla_distancias::anadir_distancia</a></div><div class="ttdeci">void anadir_distancia(const string &amp;id1, const string &amp;id2, const double &amp;dist)</div><div class="ttdoc">Modificadora que añade una distancia entre dos especies.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00015">Tabla_distancias.cc:15</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a56fb68da543e0dc75bb4b52220796ee3"><div class="ttname"><a href="class_tabla__distancias.html#a56fb68da543e0dc75bb4b52220796ee3">Tabla_distancias::distancia_minima</a></div><div class="ttdeci">double distancia_minima(string &amp;id1, string &amp;id2)</div><div class="ttdoc">Consultora de distancia minima.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00066">Tabla_distancias.cc:66</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a6e089ffc77df4827151ea961b456aec4"><div class="ttname"><a href="class_tabla__distancias.html#a6e089ffc77df4827151ea961b456aec4">Tabla_distancias::get_distancia</a></div><div class="ttdeci">double get_distancia(const string &amp;id1, const string &amp;id2) const</div><div class="ttdoc">Consultora de distancia.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00039">Tabla_distancias.cc:39</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a3df15314d1a5aebb30e1edcc66b75359"><div class="ttname"><a href="class_tabla__distancias.html#a3df15314d1a5aebb30e1edcc66b75359">Tabla_distancias::id_iesimo</a></div><div class="ttdeci">string id_iesimo(int i)</div><div class="ttdoc">Consultora de la especie iesima.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00049">Tabla_distancias.cc:49</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_ac7ff27c32c6c05165b6e49a58f23d1ca"><div class="ttname"><a href="class_tabla__distancias.html#ac7ff27c32c6c05165b6e49a58f23d1ca">Tabla_distancias::limpiar_tabla</a></div><div class="ttdeci">void limpiar_tabla()</div><div class="ttdoc">Vaciadora de tabla.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00033">Tabla_distancias.cc:33</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a8ab42ed3a4bd4cf67295993858451f8e"><div class="ttname"><a href="class_tabla__distancias.html#a8ab42ed3a4bd4cf67295993858451f8e">Tabla_distancias::Tabla_distancias</a></div><div class="ttdeci">Tabla_distancias()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00007">Tabla_distancias.cc:7</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_ad253ac73f3a5f9dc9e5a43c8af733112"><div class="ttname"><a href="class_tabla__distancias.html#ad253ac73f3a5f9dc9e5a43c8af733112">Tabla_distancias::eliminar_especie</a></div><div class="ttdeci">bool eliminar_especie(const string &amp;id)</div><div class="ttdoc">Modificadora que elimina una especie.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00020">Tabla_distancias.cc:20</a></div></div>
+<div class="ttc" id="aclass_tabla__distancias_html_a59273271f3ca09ab494c6b4af8c7df09"><div class="ttname"><a href="class_tabla__distancias.html#a59273271f3ca09ab494c6b4af8c7df09">Tabla_distancias::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Consultora de tamaño.</div><div class="ttdef"><b>Definition:</b> <a href="_tabla__distancias_8cc_source.html#l00045">Tabla_distancias.cc:45</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
